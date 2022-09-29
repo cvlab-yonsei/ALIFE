@@ -1,5 +1,5 @@
 # ALIFE
-This is the implementation of the paper "Background-Aware Pooling and Noise-Aware Loss for Weakly-Supervised Semantic Segmentation".
+This is the implementation of the paper "ALIFE: Adaptive Logit Regularizer and Feature Replay for Incremental Semantic Segmentation".
 
 For detailed information, please checkout the paper [[arXiv]()].
 
