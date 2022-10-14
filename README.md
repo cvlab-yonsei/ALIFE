@@ -1,7 +1,7 @@
 # ALIFE
 This is the implementation of the paper "ALIFE: Adaptive Logit Regularizer and Feature Replay for Incremental Semantic Segmentation".
 
-For detailed information, please checkout the paper [[arXiv]()].
+For detailed information, please checkout the paper [[arXiv](https://arxiv.org/abs/2210.06816)].
 
 
 ## Requirements
