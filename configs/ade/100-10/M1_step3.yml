@@ -1,0 +1,35 @@
+TAG: "ALIFE-M-S3"
+
+TASK: "100-10"
+STEP: 1
+OVERLAP: True
+
+SEED: 14571
+
+DATA: 
+  ROOT: "../data/ADEChallengeData2016"
+  BATCH_SIZE: 12 # for each GPU
+  CROP_SIZE: 512
+
+MODEL:
+  WEIGHTS: "ALIFE-S1_14571_ov_100-10_1_last.pt"
+  SYNC_BN: True
+  FREEZE_TYPE: "step3"
+  MIB_CLS_INIT: False
+
+LOSS:
+  CE: 
+    TYPE: "fl"
+  MY:
+    WEIGHT: 5.
+  MEMORY:
+    TYPE: "ce"
+    WEIGHT: 2. 
+
+SOLVER:
+  LR: 1e-3
+  MOMENTUM: 0.9
+  NESTEROV: True
+  WEIGHT_DECAY: 1e-4
+  MAX_EPOCH: 1 
+  GAMMA: 0.9

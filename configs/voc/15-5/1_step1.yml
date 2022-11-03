@@ -1,0 +1,35 @@
+TAG: "ALIFE-S1" 
+
+TASK: "15-5"
+STEP: 1
+OVERLAP: True
+
+SEED: 13
+
+DATA: 
+  ROOT: "../data/VOCdevkit/VOC2012"
+  BATCH_SIZE: 12 # for each GPU
+  CROP_SIZE: 512
+  
+MODEL:
+  WEIGHTS: "Base_13_ov_15-5_0_last.pt" # it is equivalent to Base_13_ov_15-5s_0_last.pt 
+  SYNC_BN: True
+  FREEZE_TYPE: "step1" 
+  MIB_CLS_INIT: True 
+
+LOSS:
+  CE: 
+    TYPE: "ce"
+  MY:
+    WEIGHT: 2.
+  KD:
+    TYPE: "kd"
+    WEIGHT: 1. 
+
+SOLVER:
+  LR: 1e-3 
+  MOMENTUM: 0.9
+  NESTEROV: True
+  WEIGHT_DECAY: 1e-4
+  MAX_EPOCH: 10
+  GAMMA: 0.9

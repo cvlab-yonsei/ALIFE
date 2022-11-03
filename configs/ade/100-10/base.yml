@@ -1,0 +1,28 @@
+TAG: "Base" 
+
+TASK: "100-10"
+STEP: 0
+OVERLAP: True
+
+SEED: 14571 
+
+DATA: 
+  ROOT: "../data/ADEChallengeData2016"
+  BATCH_SIZE: 12 # per each GPU
+  CROP_SIZE: 512
+  
+MODEL:
+  WEIGHTS: "resnet101-63fe2227.pth" 
+  SYNC_BN: True
+
+LOSS:
+  CE:
+    TYPE: "ce"
+
+SOLVER:
+  LR: 1e-2 
+  MOMENTUM: 0.9
+  NESTEROV: True
+  WEIGHT_DECAY: 1e-4
+  MAX_EPOCH: 60 
+  GAMMA: 0.9

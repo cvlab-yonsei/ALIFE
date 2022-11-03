@@ -1,0 +1,35 @@
+TAG: "ALIFE-M-S3"
+
+TASK: "19-1"
+STEP: 1
+OVERLAP: True
+
+SEED: 13161
+
+DATA: 
+  ROOT: "../data/VOCdevkit/VOC2012"
+  BATCH_SIZE: 12 # for each GPU
+  CROP_SIZE: 512
+
+MODEL:
+  WEIGHTS: "ALIFE-S1_13161_ov_19-1_1_last.pt"
+  SYNC_BN: True
+  FREEZE_TYPE: "step3"
+  MIB_CLS_INIT: False
+
+LOSS:
+  CE: 
+    TYPE: "fl"
+  MY:
+    WEIGHT: 1.
+  MEMORY:
+    TYPE: "ce"
+    WEIGHT: 1. 
+
+SOLVER:
+  LR: 1e-3
+  MOMENTUM: 0.9
+  NESTEROV: True
+  WEIGHT_DECAY: 1e-4
+  MAX_EPOCH: 1 
+  GAMMA: 0.9
