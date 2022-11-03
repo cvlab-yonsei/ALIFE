@@ -23,8 +23,8 @@ mkdir -p datasets/ade/100-50-ov datasets/ade/50-ov datasets/ade/100-10-ov
 ### Datasets
 The structure should be organized as follows:
 ```bash
-├─ALIFE
-└─data
-    ├── ADEChallengeData2016
-    └── VOCdevkit
+├─ ALIFE
+└─ data
+    ├─ ADEChallengeData2016
+    └─ VOCdevkit
 ```
