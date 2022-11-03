@@ -28,3 +28,20 @@ The structure should be organized as follows:
     ├─ ADEChallengeData2016
     └─ VOCdevkit
 ```
+
+### Training
+#### Example commands
+```Shell
+bash scripts/voc/alife.sh   # RUN ALIFE on PASCAL VOC
+bash scripts/ade/alife-m.sh # RUN ALIFE-M on ADE20K
+```
+Note: we also provide individual scripts for each step of ALIFE. Please check out in [./scripts/](https://github.com/cvlab-yonsei/ALIFE/tree/main/scripts). You may need to modify those scripts for running a specific scenario.
+
+
+
+
+## Acknowledgements
+Our codes are partly based on the following repositories.
+- [MiB](https://github.com/fcdl94/MiB)
+- [PLOP](https://github.com/arthurdouillard/CVPR2021_PLOP)
+- [Detectron2](https://github.com/facebookresearch/detectron2)
