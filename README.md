@@ -35,7 +35,7 @@ The structure should be organized as follows:
 bash scripts/voc/alife.sh   # RUN ALIFE on PASCAL VOC
 bash scripts/ade/alife-m.sh # RUN ALIFE-M on ADE20K
 ```
-Note: we also provide individual scripts for each step of ALIFE. Please check out in [./scripts/](https://github.com/cvlab-yonsei/ALIFE/tree/main/scripts). You may need to modify those scripts for running a specific scenario.
+Note: we also provide individual scripts for each step of ALIFE. Please check out in [./scripts/](https://github.com/cvlab-yonsei/ALIFE/tree/main/scripts). You may need to modify those scripts or config files (See [./configs/](https://github.com/cvlab-yonsei/ALIFE/tree/main/configs))for running a specific scenario. 
 
 
 
