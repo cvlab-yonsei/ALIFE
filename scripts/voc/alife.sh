@@ -2,7 +2,7 @@ DATA=voc
 TASK=15-5    # Select one of {19-1, 15-5, 15-5s}
 GPUS=0,1     # Type gpu indices
 
-RUN_BASE=$1  # (optional) if it is set to 1, run the base stage
+RUN_BASE=$1  # (optional) Type 0 or 1: if it is set to 0, it will skip the base stage
 SEED=$2      # (optional)
 echo run-base-${RUN_BASE}, seed-${SEED}
 

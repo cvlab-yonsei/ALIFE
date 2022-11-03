@@ -3,7 +3,7 @@ TASK=100-50  # Select one of {100-50, 50, 100-10}
 NUM_MEM=1000 # The number of memorized features for each previous category
 GPUS=0,1     # Type gpu indices
 
-RUN_BASE=$1  # (optional) if it is set to 0, skip the base stage 
+RUN_BASE=$1  # (optional) Type 0 or 1: if it is set to 0, it will skip the base stage
 SEED=$2      # (optional)
 echo run-base-${RUN_BASE}, seed-${SEED}
 
