@@ -21,10 +21,10 @@ mkdir -p datasets/ade/100-50-ov datasets/ade/50-ov datasets/ade/100-10-ov
 ```
 
 ### Datasets
-The structure of PASCAL VOC 2012 path should be organized as follows:
+The structure should be organized as follows:
 ```bash
 ├─ALIFE
 └─data
     ├── ADEChallengeData2016
     └── VOCdevkit
-``'
+```
