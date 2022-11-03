@@ -14,10 +14,17 @@ For detailed information, please checkout the paper [[arXiv](https://arxiv.org/a
 ```bash
 git clone https://github.com/cvlab-yonsei/ALIFE.git
 cd ALIFE
+
+mkdir checkpoints logs
+mkdir -p datasets/voc/19-1-ov datasets/voc/15-5-ov datasets/voc/15-5s-ov
+mkdir -p datasets/ade/100-50-ov datasets/ade/50-ov datasets/ade/100-10-ov
 ```
 
-
-## Bibtex
-```
-
-```
+### Datasets
+The structure of PASCAL VOC 2012 path should be organized as follows:
+```bash
+├─ALIFE
+└─data
+    ├── ADEChallengeData2016
+    └── VOCdevkit
+``'
