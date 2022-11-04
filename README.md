@@ -34,8 +34,8 @@ The structure should be organized as follows:
 ### Training
 #### Example commands
 ```Shell
-bash scripts/voc/alife.sh   # RUN ALIFE on PASCAL VOC
-bash scripts/ade/alife-m.sh # RUN ALIFE-M on ADE20K
+bash scripts/voc/alife.sh   # RUN ALIFE on PASCAL VOC (overlapped setting)
+bash scripts/ade/alife-m.sh # RUN ALIFE-M on ADE20K (overlapped setting)
 ```
 NOTE: we also provide individual scripts for each step of ALIFE (e.g., base.sh, step1.sh, step2.sh, and step3.sh). You may need to modify those scripts for running a specific scenario (Please see [./scripts/](https://github.com/cvlab-yonsei/ALIFE/tree/main/scripts)). You can change config options by modifying the corresponding config files ([./configs/](https://github.com/cvlab-yonsei/ALIFE/tree/main/configs)) or typing 'KEY VALUE' pairs after '--opts' on the command line within the scripts.
 
