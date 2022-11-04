@@ -4,10 +4,12 @@ This is the implementation of the paper "ALIFE: Adaptive Logit Regularizer and F
 For detailed information, please check out our paper [[arXiv](https://arxiv.org/abs/2210.06816)].
 
 
+
 ## Requirements
 * Python >= 3.6
 * PyTorch >= 1.3.0
 * yacs (https://github.com/rbgirshick/yacs)
+
 
 
 ## Getting started
@@ -35,8 +37,7 @@ The structure should be organized as follows:
 bash scripts/voc/alife.sh   # RUN ALIFE on PASCAL VOC
 bash scripts/ade/alife-m.sh # RUN ALIFE-M on ADE20K
 ```
-NOTE: we also provide individual scripts for each step of ALIFE (e.g., base stage, step 1, step 2, and step 3). You may need to modify those scripts or config files (Please see [./scripts/](https://github.com/cvlab-yonsei/ALIFE/tree/main/scripts) or [./configs/](https://github.com/cvlab-yonsei/ALIFE/tree/main/configs)) for running a specific scenario. 
-
+NOTE: we also provide individual scripts for each step of ALIFE (e.g., base.sh, step1.sh, step2sh, and step3.sh). You may need to modify those scripts for running a specific scenario (Please see [./scripts/](https://github.com/cvlab-yonsei/ALIFE/tree/main/scripts)). You can change config options by modifying the corresponding config files ([./configs/](https://github.com/cvlab-yonsei/ALIFE/tree/main/configs)) or typing 'KEY VALUE' pairs" after '--opts' on the command line within the scripts.
 
 
 
