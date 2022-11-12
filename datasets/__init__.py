@@ -1,7 +1,6 @@
 import torch
 from torch.utils.data import DataLoader
 
-#import datasets.transform
 from .transform import (
     Compose, 
     RandomResizedCrop, 
@@ -19,20 +18,6 @@ import utils.tasks as tasks
 __all__ = ["get_datasets"]
 
 def get_datasets(cfg):
-#    tr_transform = transform.Compose([
-#        transform.RandomResizedCrop(cfg.DATA.CROP_SIZE, (0.5, 2.0)),
-#        transform.RandomHorizontalFlip(),
-#        transform.ToTensor(),
-#        transform.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-#    ])
-#    val_transform = transform.Compose([
-#        transform.Resize(size=cfg.DATA.CROP_SIZE),
-#        transform.CenterCrop(size=cfg.DATA.CROP_SIZE),
-#        transform.ToTensor(),
-#        transform.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-#    ])
-#
-
     tr_transform = Compose([
         RandomResizedCrop(cfg.DATA.CROP_SIZE, (0.5, 2.0)),
         RandomHorizontalFlip(),
