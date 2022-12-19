@@ -37,7 +37,7 @@ The structure should be organized as follows:
 bash scripts/voc/alife.sh   # RUN ALIFE   on PASCAL VOC (overlapped setting)
 bash scripts/ade/alife-m.sh # RUN ALIFE-M on ADE20K     (overlapped setting)
 ```
-NOTE: we also provide individual scripts for each step of ALIFE (e.g., base.sh, step1.sh, step2.sh, and step3.sh). You may need to modify those scripts for running a specific scenario (Please see [./scripts/](https://github.com/cvlab-yonsei/ALIFE/tree/main/scripts)). To change config options, 1) modify the corresponding config files ([./configs/](https://github.com/cvlab-yonsei/ALIFE/tree/main/configs)) or 2) type 'KEY VALUE' pairs after '--opts' on the command line within the scripts.
+NOTE: we also provide individual scripts for each step of ALIFE (e.g., base.sh, step1.sh, step2.sh, and step3.sh). You may need to modify those scripts for running a specific scenario (Please see [./scripts/](https://github.com/cvlab-yonsei/ALIFE/tree/main/scripts)). To change config options, 1) modify the corresponding config files ([./configs/](https://github.com/cvlab-yonsei/ALIFE/tree/main/configs)) **or** 2) type 'KEY VALUE' pairs after '--opts' on the command line within the scripts.
 
 
 
